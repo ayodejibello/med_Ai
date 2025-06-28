@@ -1,26 +1,31 @@
+import mail from "../assets/email.png";
+import apple from "../assets/apple-icon.png";
+import google from "../assets/google-icon.png";
 import { Link } from "react-router-dom";
-const SignUp = () => {
+const Login = () => {
   return (
     <div className="min-h-screen flex justify-center items-center bg-gray-950 p-20">
       <div className="w-3/5 h-[70%] transBack flex flex-col items-center p-20 rounded-lg gap-10">
         <div className="size-44 -mt-48 rounded-full bg-gray-950 "></div>
-        <h1 className="text-white text-3xl">Sign up wit your Email</h1>
-        <input
-          type="text"
-          placeholder="Enter Email"
-          className="border-1 border-white p-6 text-white rounded-full w-full"
-        />
-        <button className="border-1 border-white p-6 rounded-full bg-white text-black w-full">
-          Sign up
+        <h1 className="text-white text-3xl">Sign up</h1>
+        <Link
+          to={"/signup-email"}
+          className="border-1 border-white p-6 rounded-full bg-white text-black w-full flex justify-center gap-2 items-center"
+        >
+          <img src={mail} className="w-8" />
+          Sign up with Email
+        </Link>
+        <button className="border-1 border-white p-6 text-white rounded-full w-full flex justify-center gap-2 items-center">
+          <img src={google} className="w-6" /> sign up with Google
         </button>
-        <button className="border-1 border-white p-6 text-white rounded-full w-full">
-          Go back
+        <button className="border-1 border-white p-6 text-white rounded-full w-full flex justify-center gap-2 items-center">
+          <img src={apple} className="w-8" /> sign up with Apple
         </button>
         <p className="text-white text-base">
-          Already have an account? <Link to={"/login"}>Sign in</Link>
+          Already have an account? <Link to={"/login"}>Log in</Link>
         </p>
       </div>
     </div>
   );
 };
-export default SignUp;
+export default Login;

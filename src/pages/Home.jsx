@@ -5,6 +5,11 @@ import facebook from "../assets/facebook.svg";
 import insta from "../assets/instagram.png";
 import phone from "../assets/phone.png";
 import X from "../assets/twitter.svg";
+import arrowUp from "../assets/arrow-up.png";
+import medNovaPic from "../assets/mednova.png";
+import robot from "../assets/robot.png";
+import wave from "../assets/wave.png";
+import attach from "../assets/attach.png";
 import { Link } from "react-router-dom";
 
 const ProfileCard = ({ image, name, position }) => {
@@ -29,21 +34,21 @@ const Home = () => {
 
         {/*  */}
         <div className="grid grid-cols-2 gap-6 w-4/5 mx-auto mt-20 ">
-          <div className="border-1 h-60 flex flex-col justify-center items-center rounded-xl border-gray-500">
+          <div className="border-1 h-60 flex flex-col justify-center items-center rounded-xl border-gray-500 scaler">
             <span className="text-gray-200">Total users</span>
             <span className="text-4xl font-bold text-amber-300">+258k</span>
           </div>
-          <div className="border-1 h-60 flex flex-col justify-center items-center rounded-xl border-gray-500">
+          <div className="border-1 h-60 flex flex-col justify-center items-center rounded-xl border-gray-500 scaler">
+            <span className="text-gray-200">ratings</span>
+            <span className="text-4xl font-bold text-amber-300">4.8</span>
+          </div>
+          <div className="border-1 h-60 flex flex-col justify-center items-center rounded-xl border-gray-500 scaler">
             <span className="text-gray-200">Total users</span>
             <span className="text-4xl font-bold text-amber-300">+258k</span>
           </div>
-          <div className="border-1 h-60 flex flex-col justify-center items-center rounded-xl border-gray-500">
-            <span className="text-gray-200">Total users</span>
-            <span className="text-4xl font-bold text-amber-300">+258k</span>
-          </div>
-          <div className="border-1 h-60 flex flex-col justify-center items-center rounded-xl border-gray-500 mb-10">
-            <span className="text-gray-200">Total users</span>
-            <span className="text-4xl font-bold text-amber-300">+258k</span>
+          <div className="border-1 h-60 flex flex-col justify-center items-center rounded-xl border-gray-500 scaler mb-10">
+            <span className="text-gray-200">ratings</span>
+            <span className="text-4xl font-bold text-amber-300">4.8</span>
           </div>
         </div>
         {/*  */}
@@ -53,14 +58,14 @@ const Home = () => {
         <Link to="/chat">
           <div className="border-1 rounded-lg flex flex-col justify-between self-center justify-self-center bg-black h-80 w-9/10 p-10">
             <span className="text-2xl text-gray-400">how can I help you?</span>
-            <button className="text-yellow-400 text-5xl font-bold bg-gray-900 size-max p-1 px-2 rounded-lg self-end">
-              ↑
+            <button className=" bg-gray-900 size-max p-1 px-2 rounded-lg self-end">
+              <img src={arrowUp} />
             </button>
           </div>
         </Link>
 
         {/*  */}
-        <h1 className="text-4xl font-bold text-center mt-28 mb-8">
+        <h1 className="text-4xl font-bold text-center mt-32 mb-8">
           Revolutionalize healthcare with AI
         </h1>
         <p className="text-lg font-light text-center">
@@ -70,44 +75,47 @@ const Home = () => {
           numquam doloremque!
         </p>
         {/*  */}
-        <div className="flex gap-20">
-          <div>
-            <img src={heart} className="max-w-76" />
-            <div className="border-box border-1 rounded-md p-6 text-xl">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus,
-              qui laudantium! Est, magni tenetur! Tenetur, molestiae! Soluta,
-              quos provident. Inventore quibusdam illum recusandae dolores.
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt
-              delectus quod corporis aspernatur tempora, sapiente repellendus
-              quasi quae ut deleniti.
+
+        <div className="flex items-center gap-10 justify-between w-full pb-32 mt-20">
+          <div className="flex flex-col items-center justify-center gap-12">
+            <img src={heart} className="w-44 scaler" />
+            <div className="border-1 rounded-md p-5 text-xl ">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae
+              obcaecati impedit est assumenda repellat nihil ea fugit magni?
+              Commodi harum illum magni provident, quibusdam laboriosam
+              voluptates itaque in sapiente fuga. Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Nisi, doloribus.
             </div>
           </div>
-          <div>
-            <img src={heart} className="max-w-76" />
-            <div className="border-box border-1 rounded-md p-6 text-xl">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus,
-              qui laudantium! Est, magni tenetur! Tenetur, molestiae! Soluta,
-              quos provident. Inventore quibusdam illum recusandae dolores.
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt
-              delectus quod corporis aspernatur tempora, sapiente repellendus
-              quasi quae ut deleniti.
+          <div className="flex flex-col items-center justify-center gap-12">
+            <img src={wave} className="w-44 scaler" />
+            <div className="border-1 rounded-md p-5 text-xl ">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae
+              obcaecati impedit est assumenda repellat nihil ea fugit magni?
+              Commodi harum illum magni provident, quibusdam laboriosam
+              voluptates itaque in sapiente fuga. Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Nisi, doloribus.
             </div>
           </div>
-          <div>
-            <img src={heart} className="max-w-76" />
-            <div className="border-box border-1 rounded-md p-6 text-xl">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus,
-              qui laudantium! Est, magni tenetur! Tenetur, molestiae! Soluta,
-              quos provident. Inventore quibusdam illum recusandae dolores.
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt
-              delectus quod corporis aspernatur tempora, sapiente repellendus
-              quasi quae ut deleniti.
+          <div className="flex flex-col items-center justify-center gap-12">
+            <img src={robot} className="w-44 scaler" />
+            <div className="border-1 rounded-md p-5 text-xl ">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae
+              obcaecati impedit est assumenda repellat nihil ea fugit magni?
+              Commodi harum illum magni provident, quibusdam laboriosam
+              voluptates itaque in sapiente fuga. Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Nisi, doloribus.
             </div>
           </div>
         </div>
+
+        {/*  */}
+        <div className="bg-gray-300  p-20">
+          <img src={medNovaPic} className="scaler" />
+        </div>
         {/*  */}
         <h1 className="mt-20 mb-10 text-center text-3xl font-bold">
-          Meet out team
+          Meet our team
         </h1>
         <div className="flex items-center justify-between">
           <button className="text-6xl font-bold">‹</button>
@@ -140,10 +148,10 @@ const Home = () => {
           Our Socials
         </h1>
         <div className="flex justify-center items-center gap-20">
+          <img src={phone} className="w-28 bg-white rounded-full" />
           <img src={X} className="w-24" />
           <img src={insta} className="w-28" />
-          <img src={facebook} className="w-28" />
-          <img src={phone} className="w-28 bg-white rounded-full" />
+          <img src={facebook} className="w-28 bg-blue-700 rounded-lg" />
         </div>
       </div>
     </div>

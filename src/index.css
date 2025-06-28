@@ -17,3 +17,22 @@
 button {
   cursor: pointer;
 }
+.scaler {
+  animation-name: scaler;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+
+  animation-duration: 6s;
+}
+
+@keyframes scaler {
+  25% {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(0.9);
+  }
+}
