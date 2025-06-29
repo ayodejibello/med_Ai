@@ -9,7 +9,7 @@ import arrowUp from "../assets/arrow-up.png";
 import medNovaPic from "../assets/mednova.png";
 import robot from "../assets/robot.png";
 import wave from "../assets/wave.png";
-import attach from "../assets/attach.png";
+import r2 from "../assets/r2.png";
 import { Link } from "react-router-dom";
 
 const ProfileCard = ({ image, name, position }) => {
@@ -27,10 +27,36 @@ const Home = () => {
       <NavBar />
       <div className="mt-10 p-10">
         <h1 className="text-6xl font-bold text-center">MedNova AI</h1>
-        <h2 className="text-xl font-medium text-center w-1/2 mx-auto mt-4">
+        <h2 className="text-lg font-light text-center w-2/3 mx-auto mt-4">
           Empowers clinicans, optimize operations, and deliver exceptional care
           with cutting edge AI technology
         </h2>
+        {/*  */}
+        <div className="my-20 py-20">
+          <div
+            className="h-96 min-w-[380px] border-[1px] border-gray-700 rounded-sm flex self-center justify-self-center relative bg-center bg-contain bg-no-repeat"
+            style={{ backgroundImage: `url(${r2})` }}
+          >
+            <div className="w-max absolute -left-[70%] -top-10 flex justify-center  flex-col rounded-sm ">
+              <h1 className="text-4xl font-bold">Mednova AI,</h1>
+              <h2 className="text-3xl font-bold text-lime-400">
+                Accelerates diagnostics
+              </h2>
+            </div>
+            <div className="w-60 h-20 bg-gray-700 text-white absolute -right-[60%] -top-10 flex justify-center items-center flex-col rounded-sm">
+              <h1 className="text-gray-300">Health score</h1>
+              <h2 className="text-2xl font-semibold tracking-wide">8/10</h2>
+            </div>
+            <div className="w-60 h-20 bg-gray-700 text-white absolute -left-[60%] bottom-10  flex justify-center items-center flex-col rounded-sm">
+              <h1 className="text-gray-300">Heart rate</h1>
+              <h2 className="text-2xl font-semibold tracking-wide">70BPM</h2>
+            </div>
+            <div className="w-60 h-20 bg-gray-700 text-white absolute -right-[60%] -bottom-10  flex justify-center items-center flex-col rounded-sm">
+              <h1 className="text-gray-300">Heart rate</h1>
+              <h2 className="text-2xl font-semibold tracking-wide">70BPM</h2>
+            </div>
+          </div>
+        </div>
 
         {/*  */}
         <div className="grid grid-cols-2 gap-6 w-4/5 mx-auto mt-20 ">

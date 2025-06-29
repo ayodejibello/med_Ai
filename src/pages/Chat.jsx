@@ -6,7 +6,7 @@ import search from "../assets/search-icon.svg";
 import camera from "../assets/camera-icon.png";
 import file from "../assets/file-icon.png";
 import gallery from "../assets/gallery-icon.png";
-
+const [message, setMessage] = useState("");
 const Chat = () => {
   const [showMenu, setShowMenu] = useState(false);
   const [collapse, setCollapse] = useState(true);
@@ -59,7 +59,7 @@ const Chat = () => {
         <h1 className="text-center my-7 text-2xl font-semibold">MedNova AI</h1>
         <div className="border-[0.5px] rounded-lg flex flex-col  self-end justify-self-center bg-black h-[300px] w-7/10 p-10 relative">
           <textarea
-            className="w-full outline-none border-0 h-4/5 text-2xl"
+            className="w-full outline-none border-0 min-h-4/5 text-2xl"
             placeholder="Ask MedNova anything"
           ></textarea>
           <div className="flex flex-row justify-between w-full h-1/5">
