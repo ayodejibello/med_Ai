@@ -6,8 +6,9 @@ import search from "../assets/search-icon.svg";
 import camera from "../assets/camera-icon.png";
 import file from "../assets/file-icon.png";
 import gallery from "../assets/gallery-icon.png";
-const [message, setMessage] = useState("");
+
 const Chat = () => {
+  // const [message, setMessage] = useState("");
   const [showMenu, setShowMenu] = useState(false);
   const [collapse, setCollapse] = useState(true);
   return (
@@ -72,16 +73,16 @@ const Chat = () => {
               <img src={attach} />
             </button>
             {showMenu && (
-              <div className="flex flex-col bg-gray-900 w-48 h-max p-4 gap-3 rounded-sm absolute bottom-28">
-                <div className="flex items-center gap-3 hover:bg-gray-950 p-2 cursor-pointer">
+              <div className="flex flex-col bg-gray-900 w-48 h-max gap-3 rounded-sm absolute bottom-28">
+                <div className="flex items-center gap-3 hover:bg-white hover:text-black p-2 cursor-pointer">
                   <img src={camera} className="bg-white p-2 rounded-md w-10" />
                   <span>camera</span>
                 </div>
-                <div className="flex items-center gap-3 hover:bg-gray-950 p-2 cursor-pointer">
+                <div className="flex items-center gap-3 hover:bg-white hover:text-black p-2 cursor-pointer">
                   <img src={gallery} className="bg-white p-2 rounded-md w-10" />
                   <span>gallery</span>
                 </div>
-                <div className="flex items-center gap-3 hover:bg-gray-950 p-2 cursor-pointer">
+                <div className="flex items-center gap-3 hover:bg-white hover:text-black p-2 cursor-pointer">
                   <img src={file} className="bg-white p-2 rounded-md w-10" />
                   <span>files</span>
                 </div>
