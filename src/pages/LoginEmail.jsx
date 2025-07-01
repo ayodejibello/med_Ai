@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 const SignUp = () => {
   return (
-    <div className="min-h-screen flex justify-center items-center bg-gray-950 p-20">
-      <div className="w-3/5 h-[70%] transBack flex flex-col items-center p-20 rounded-lg gap-10">
-        <div className="size-44 -mt-48 rounded-full bg-gray-950 "></div>
+    <div className="min-h-screen flex justify-center items-center bg-gray-950 md:p-20 p-10">
+      <div className="md:w-3/5 w-full md:h-[70%] h-[90%] transBack flex flex-col items-center md:p-20 p-10 rounded-lg gap-10">
+        <div className="md:size-44 size-20 md:-mt-48 -mt-20 rounded-full bg-gray-950 "></div>
         <h1 className="text-white text-3xl">Sign in with your Email</h1>
         <input
           type="text"
@@ -11,7 +11,7 @@ const SignUp = () => {
           className="border-1 border-white p-6 text-white rounded-full w-full"
         />
         <button className="border-1 border-white p-6 rounded-full bg-white text-black w-full">
-          Sign up
+          Sign in
         </button>
         <button
           className="border-1 border-white p-6 text-white rounded-full w-full"

@@ -15,7 +15,7 @@ import { Link } from "react-router-dom";
 const ProfileCard = ({ image, name, position }) => {
   return (
     <div className="flex flex-col items-center gap-4 font-semibold text-xl">
-      <img src={image} alt={name} className="rounded-full size-52" />
+      <img src={image} alt={name} className="rounded-full md:size-52 size-24" />
       <span>{name}</span>
       <span>{position}</span>
     </div>
@@ -175,10 +175,10 @@ const Home = () => {
           Our Socials
         </h1>
         <div className="flex md:flex-row flex-col justify-center items-center gap-20 p-10">
-          <img src={phone} className="w-28 bg-white rounded-full" />
-          <img src={X} className="w-24" />
-          <img src={insta} className="w-28" />
-          <img src={facebook} className="w-28 bg-blue-700 rounded-lg" />
+          <img src={phone} className="md:w-28 w-16 bg-white rounded-full" />
+          <img src={X} className="md:w-28 w-16" />
+          <img src={insta} className="md:w-28 w-16" />
+          <img src={facebook} className="md:w-28 w-16 bg-blue-700 rounded-lg" />
         </div>
       </div>
     </div>

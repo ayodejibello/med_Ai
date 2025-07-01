@@ -29,7 +29,7 @@ const NavBar = () => {
       </div>
       {/* mobile menu */}
       {showMenu && (
-        <div className="w-2/3 flex flex-col h-screen fixed z-10 top-0 right-0 bg-gray-900 p-2">
+        <div className="w-2/3 flex flex-col h-screen fixed z-10 top-0 right-0 bg-gray-900 p-6">
           <button
             className="border-2 rounded-sm border-gray-200 p-2 self-start w-max"
             onClick={() => {
@@ -38,7 +38,7 @@ const NavBar = () => {
           >
             <img src={close} alt="menu" />
           </button>
-          <ul className="flex flex-col items-center gap-4 mt-10">
+          <ul className="flex flex-col items-center gap-10 mt-10">
             <li>Features</li>
             <li>About Us</li>
             <li>Contact Us</li>
