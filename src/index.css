@@ -36,3 +36,6 @@ button {
     transform: scale(0.9);
   }
 }
+div {
+  scrollbar-width: none;
+}
