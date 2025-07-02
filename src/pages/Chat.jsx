@@ -97,13 +97,13 @@ const Chat = () => {
           >
             <img src={hamburger} alt="menu" />
           </button>
-          <h1 className="md:block hidden">Mednova AI</h1>
+          <h1 className="md:block hidden">MEDNOVA AI</h1>
           <span className="bg-green-700 text-white font-bold text-3xl p-2 rounded-full px-4">
             C
           </span>
         </div>
         {/*  */}
-        <h1 className="text-center my-7 text-2xl font-semibold">MedNova AI</h1>
+        <h1 className="text-center my-7 text-2xl font-semibold">MEDNOVA AI</h1>
         <div className="border-[0.5px] rounded-lg flex flex-col self-end justify-self-center bg-black md:h-[300px] h-[200px] w-7/10 md:p-10 p-2 relative">
           <textarea
             className="w-full outline-none min-h-4/5 md:text-2xl text-sm"

@@ -26,7 +26,7 @@ const Home = () => {
     <div className="homepage min-h-screen text-white">
       <NavBar />
       <div className="mt-10">
-        <h1 className="text-6xl font-bold text-center">MedNova AI</h1>
+        <h1 className="text-6xl font-bold text-center">MEDNOVA AI</h1>
         <h2 className="text-lg font-light text-center w-2/3 mx-auto mt-4">
           Empowers clinicans, optimize operations, and deliver exceptional care
           with cutting edge AI technology
@@ -34,7 +34,7 @@ const Home = () => {
         {/*  */}
         <div className="my-20 py-20 px-10">
           <div
-            className="h-96 md:w-1/3 w-full md:border-[1px] border-none border-gray-700 rounded-sm flex self-center justify-self-center md:relative bg-center bg-contain bg-no-repeat"
+            className="h-96 md:w-1/3 w-full sm:border-1 border-0 border-gray-700 rounded-sm flex self-center justify-self-center md:relative bg-center bg-contain bg-no-repeat"
             style={{ backgroundImage: `url(${r2})` }}
           >
             <div className="w-max absolute -left-[70%] -top-10 md:flex hidden  justify-center  flex-col rounded-sm ">
