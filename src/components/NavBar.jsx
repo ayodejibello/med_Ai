@@ -5,7 +5,7 @@ import { useState } from "react";
 const NavBar = () => {
   const [showMenu, setShowMenu] = useState(false);
   return (
-    <div className="flex justify-between p-10 items-center">
+    <div className="flex justify-between md:p-10 p-4 items-center">
       <div className="text-3xl font-bold">Mednova Ai</div>
       <div className="md:block hidden">
         <ul className="flex items-center gap-4">

@@ -103,10 +103,10 @@ const Home = () => {
           </p>
           {/*  */}
 
-          <div className="flex md:flex-row flex-col items-center gap-10 justify-between w-full pb-32 mt-20">
+          <div className="flex md:flex-row flex-col items-center md:gap-10 gap-6 justify-between w-full pb-32 mt-20">
             <div className="flex flex-col items-center justify-center gap-12">
               <img src={heart} className="w-44 scaler" />
-              <div className="border-1 rounded-md p-5 text-lg ">
+              <div className="border-1 rounded-md p-5 md:text-lg text-sm w-full ">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae
                 obcaecati impedit est assumenda repellat nihil ea fugit magni?
                 Commodi harum illum magni provident, quibusdam laboriosam
@@ -116,7 +116,7 @@ const Home = () => {
             </div>
             <div className="flex flex-col items-center justify-center gap-12">
               <img src={wave} className="w-44 scaler" />
-              <div className="border-1 rounded-md p-5 text-lg ">
+              <div className="border-1 rounded-md p-5 md:text-lg text-sm ">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae
                 obcaecati impedit est assumenda repellat nihil ea fugit magni?
                 Commodi harum illum magni provident, quibusdam laboriosam
@@ -126,7 +126,7 @@ const Home = () => {
             </div>
             <div className="flex flex-col items-center justify-center gap-12">
               <img src={robot} className="w-44 scaler" />
-              <div className="border-1 rounded-md p-5 text-lg ">
+              <div className="border-1 rounded-md p-5 md:text-lg text-sm ">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae
                 obcaecati impedit est assumenda repellat nihil ea fugit magni?
                 Commodi harum illum magni provident, quibusdam laboriosam
