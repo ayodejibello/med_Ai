@@ -53,7 +53,7 @@ const Chat = () => {
       {/* mobile sidebar */}
       {display && (
         <div
-          className={`bg-gray-800 p-4 md:hidden flex flex-col gap-8 items-start transition-all tracking-wider fixed h-screen z-10`}
+          className={`bg-gray-800 p-4 md:hidden flex flex-col w-max gap-8 items-start transition-all tracking-wider fixed h-screen z-10`}
         >
           <button
             className="self-end"
@@ -67,15 +67,15 @@ const Chat = () => {
           <div className="flex p-4 flex-col items-start gap-8">
             <button>+ New chat</button>
             <h1 className="text-xl font-semibold">Recent</h1>
-            <div className="bg-gray-600 flex items-center p-4 rounded-full gap-2">
-              <img src={search} className="w-6" />
+            <div className="bg-gray-600 flex items-center p-2 rounded-full gap-2">
+              <img src={search} className="w-4" />
               <input
                 type="text"
                 className="outline-none"
                 placeholder="search recent"
               />
             </div>
-            <div className="flex flex-col gap-10 items-start text-lg font-light p-3">
+            <div className="flex flex-col gap-10 items-start text-sm font-light p-3">
               <p>Signs of Malaria</p>
               <p>Signs of Malaria</p>
               <p>Signs of Malaria</p>
@@ -90,7 +90,7 @@ const Chat = () => {
       <div className="p-10 w-full">
         <div className="flex justify-between items-center w-full">
           <button
-            className="border-2 rounded-sm border-gray-200 p-2 self-start w-max md:hidden flex"
+            className="w-max md:hidden flex"
             onClick={() => {
               setDisplay(true);
             }}
@@ -98,13 +98,15 @@ const Chat = () => {
             <img src={hamburger} alt="menu" />
           </button>
           <h1 className="md:block hidden">MEDNOVA AI</h1>
-          <span className="bg-green-700 text-white font-bold text-3xl p-2 rounded-full px-4">
+          <span className="bg-green-700 text-white font-bold md:text-3xl text-sm p-2 rounded-full px-4">
             C
           </span>
         </div>
         {/*  */}
-        <h1 className="text-center my-7 text-2xl font-semibold">MEDNOVA AI</h1>
-        <div className="border-[0.5px] rounded-lg flex flex-col self-end justify-self-center bg-black md:h-[300px] h-[200px] w-7/10 md:p-10 p-2 relative">
+        <h1 className="text-center my-7 md:text-2xl text-sm font-semibold">
+          MEDNOVA AI
+        </h1>
+        <div className="border-[0.5px] rounded-lg flex flex-col self-end justify-self-center bg-black md:h-[300px] h-[200px] md:w-7/10 w-full md:p-10 p-2 relative mt-20">
           <textarea
             className="w-full outline-none min-h-4/5 md:text-2xl text-sm"
             placeholder="Ask MedNova anything"

@@ -6,7 +6,7 @@ const NavBar = () => {
   const [showMenu, setShowMenu] = useState(false);
   return (
     <div className="flex justify-between md:p-10 p-4 items-center">
-      <div className="text-3xl font-bold">MEDNOVA AI</div>
+      <div className="md:text-3xl text-lg font-bold">MEDNOVA AI</div>
       <div className="md:block hidden">
         <ul className="flex items-center gap-4">
           <li>Features</li>
@@ -19,7 +19,7 @@ const NavBar = () => {
           <Link to={"/login"}>Login/Signup</Link>
         </button>
         <button
-          className="border-2 rounded-sm border-gray-200 p-4 md:hidden block"
+          className="md:hidden block"
           onClick={() => {
             setShowMenu(true);
           }}

@@ -26,15 +26,17 @@ const Home = () => {
     <div className="homepage min-h-screen text-white">
       <NavBar />
       <div className="mt-10">
-        <h1 className="text-6xl font-bold text-center">MEDNOVA AI</h1>
-        <h2 className="text-lg font-light text-center w-2/3 mx-auto mt-4">
+        <h1 className="md:text-6xl text-lg font-bold text-center">
+          MEDNOVA AI
+        </h1>
+        <h2 className="md:text-lg text-sm font-light text-center w-2/3 mx-auto mt-4">
           Empowers clinicans, optimize operations, and deliver exceptional care
           with cutting edge AI technology
         </h2>
         {/*  */}
-        <div className="my-20 py-20 px-10">
+        <div className="md:my-20 my-10 md:py-20 py-10 px-10">
           <div
-            className="h-96 md:w-1/3 w-full sm:border-1 border-0 border-gray-700 rounded-sm flex self-center justify-self-center md:relative bg-center bg-contain bg-no-repeat"
+            className="md:h-96 h-40 md:w-1/3 w-full sm:border-1 border-0 border-gray-700 rounded-sm flex self-center justify-self-center md:relative bg-center bg-contain bg-no-repeat"
             style={{ backgroundImage: `url(${r2})` }}
           >
             <div className="w-max absolute -left-[70%] -top-10 md:flex hidden  justify-center  flex-col rounded-sm ">
@@ -78,12 +80,14 @@ const Home = () => {
           </div>
         </div> */}
         {/*  */}
-        <h1 className="text-center text-3xl mt-16 mb-4">
+        <h1 className="text-center md:text-3xl text-lg mt-16 mb-4">
           Ask mednova anything
         </h1>
         <Link to="/chat">
-          <div className="border-1 rounded-lg flex flex-col justify-between self-center justify-self-center bg-black h-80 w-9/10 p-10">
-            <span className="text-2xl text-gray-400">how can I help you?</span>
+          <div className="border-1 rounded-lg flex flex-col justify-between self-center justify-self-center bg-black md:h-80 h-40 md:w-9/10 w-8/10 p-10">
+            <span className="md:text-2xl text-sm text-gray-400">
+              how can I help you?
+            </span>
             <button className=" bg-gray-900 size-max p-1 px-2 rounded-lg self-end">
               <img src={arrowUp} />
             </button>
@@ -92,10 +96,10 @@ const Home = () => {
 
         {/*  */}
         <div className="p-10 px-20">
-          <h1 className="text-4xl font-bold text-center mt-32 mb-8">
+          <h1 className="md:text-4xl text-lg font-bold text-center mt-32 mb-8">
             Revolutionalize healthcare with AI
           </h1>
-          <p className="text-lg font-light text-center">
+          <p className="md:text-lg text-sm font-light text-center">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
             quae ipsa alias amet impedit vel at autem voluptas? Corrupti facilis
             aspernatur tenetur fugit voluptatibus nemo ducimus laborum similique
@@ -105,7 +109,7 @@ const Home = () => {
 
           <div className="flex md:flex-row flex-col items-center md:gap-10 gap-6 justify-between w-full pb-32 mt-20">
             <div className="flex flex-col items-center justify-center gap-12">
-              <img src={heart} className="w-44 scaler" />
+              <img src={heart} className="md:w-44 w-24 scaler" />
               <div className="border-1 rounded-md p-5 md:text-lg text-sm w-full ">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae
                 obcaecati impedit est assumenda repellat nihil ea fugit magni?
@@ -115,7 +119,7 @@ const Home = () => {
               </div>
             </div>
             <div className="flex flex-col items-center justify-center gap-12">
-              <img src={wave} className="w-44 scaler" />
+              <img src={wave} className="md:w-44 w-24 scaler" />
               <div className="border-1 rounded-md p-5 md:text-lg text-sm ">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae
                 obcaecati impedit est assumenda repellat nihil ea fugit magni?
@@ -125,7 +129,7 @@ const Home = () => {
               </div>
             </div>
             <div className="flex flex-col items-center justify-center gap-12">
-              <img src={robot} className="w-44 scaler" />
+              <img src={robot} className="md:w-44 w-24 scaler" />
               <div className="border-1 rounded-md p-5 md:text-lg text-sm ">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae
                 obcaecati impedit est assumenda repellat nihil ea fugit magni?
